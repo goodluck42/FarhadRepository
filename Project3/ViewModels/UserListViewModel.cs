@@ -10,11 +10,15 @@ namespace Project3.ViewModels;
 [INotifyPropertyChanged]
 public partial class UserListViewModel : BaseViewModel
 {
-    public ObservableCollection<User> Users { get; set; } = null!;
+    public ObservableCollection<User> Users { get; set; }
 
     public UserListViewModel()
     {
+        Users = new ObservableCollection<User>();
         
+        Users.Add(new User());
+        Users.Add(new User());
+        Users.Add(new User());
     }
 
     [RelayCommand]

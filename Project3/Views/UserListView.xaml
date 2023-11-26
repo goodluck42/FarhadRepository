@@ -16,7 +16,7 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <ListBox Grid.ColumnSpan="3" ItemsSource="{}"/>
+        <ListBox Grid.ColumnSpan="3" ItemsSource="{Binding Users}"/>
         <Button Grid.Column="0" Grid.Row="1" Content="Add" Command="{Binding AddUserCommand}"/>
         <Button Grid.Column="1" Grid.Row="1" Content="Update"/>
         <Button Grid.Column="2" Grid.Row="1" Content="Remove"/>
