@@ -3,8 +3,7 @@
 namespace Project3.ViewModels;
 
 [INotifyPropertyChanged]
-public partial class SingletonViewModel : BaseViewModel
+public partial class UpdateUserViewModel : BaseViewModel
 {
     
 }
-// new window opened

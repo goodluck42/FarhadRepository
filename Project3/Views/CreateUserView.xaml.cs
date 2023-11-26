@@ -2,9 +2,9 @@
 
 namespace Project3.Views;
 
-public partial class FactoryView : UserControl
+public partial class CreateUserView : UserControl
 {
-    public FactoryView()
+    public CreateUserView()
     {
         InitializeComponent();
     }

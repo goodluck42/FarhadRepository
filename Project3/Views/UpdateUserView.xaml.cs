@@ -2,9 +2,9 @@
 
 namespace Project3.Views;
 
-public partial class SingletonView : UserControl
+public partial class UpdateUserView : UserControl
 {
-    public SingletonView()
+    public UpdateUserView()
     {
         InitializeComponent();
     }

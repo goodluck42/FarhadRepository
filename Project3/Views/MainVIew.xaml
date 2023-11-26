@@ -8,11 +8,14 @@
         mc:Ignorable="d"
         Title="MainVIew" Height="450" Width="800">
     <Window.Resources>
-        <DataTemplate DataType="{x:Type vm:SingletonViewModel}">
-            <v:SingletonView />
+        <DataTemplate DataType="{x:Type vm:UserListViewModel}">
+            <v:UserListView />
         </DataTemplate>
-        <DataTemplate DataType="{x:Type vm:FactoryViewModel}">
-            <v:FactoryView />
+        <DataTemplate DataType="{x:Type vm:CreateUserViewModel}">
+            <v:CreateUserView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:UpdateUserViewModel}">
+            <v:UpdateUserView />
         </DataTemplate>
     </Window.Resources>
     <Grid>
