@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm;
+﻿using System;
+using CommunityToolkit.Mvvm;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Messaging;
 using Project3.Messages;

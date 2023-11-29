@@ -29,7 +29,7 @@ namespace Project3
                 ServiceCollection.AddSingleton<MainViewModel>();
                 ServiceCollection.AddTransient<CreateUserViewModel>();
                 ServiceCollection.AddTransient<UpdateUserViewModel>();
-                ServiceCollection.AddTransient<UserListViewModel>();
+                ServiceCollection.AddSingleton<UserListViewModel>();
                 
             }
             

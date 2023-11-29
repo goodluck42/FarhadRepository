@@ -16,9 +16,10 @@ public partial class UserListViewModel : BaseViewModel
     {
         Users = new ObservableCollection<User>();
         
-        Users.Add(new User());
-        Users.Add(new User());
-        Users.Add(new User());
+        WeakReferenceMessenger.Default.Register<UserAddedMessage>(this, (sender, message) =>
+        {
+            Users.Add(message.User);
+        });
     }
 
     [RelayCommand]
@@ -28,5 +29,14 @@ public partial class UserListViewModel : BaseViewModel
         var message = new ViewModelChangedMessage(viewModel);
 
         WeakReferenceMessenger.Default.Send<ViewModelChangedMessage>(message);
+    }
+
+    [RelayCommand]
+    private void RemoveUser(object? param)
+    {
+        if (param is User user)
+        {
+            Users.Remove(user);
+        }
     }
 }

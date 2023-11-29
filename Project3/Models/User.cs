@@ -1,8 +1,16 @@
-﻿namespace Project3.Models;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-public class User
+namespace Project3.Models;
+
+[INotifyPropertyChanged]
+public partial class User
 {
-    public int Id { get; set; }
-    public string? Login { get; set; }
-    public string? Password { get; set; }
+    [ObservableProperty]
+    private string? _login;
+    
+    [ObservableProperty]
+    private string? _password;
+    
+    [ObservableProperty]
+    private int _id;
 }
